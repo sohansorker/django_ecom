@@ -82,7 +82,9 @@ single product
                                     <td class="li-product-stock-status"><span class="in-stock">{{p.status}}</span>
                                     </td>
 
-                                    <td class="li-product-add-cart"><a href="{%url 'useroderproduct_details' id=p.id oid=p.order_id%}">Details</a></td>
+                                    <td class="li-product-add-cart"><a
+                                            href="{%url 'useroderproduct_details' id=p.id oid=p.order_id%}">Details</a>
+                                    </td>
                                 </tr>
                                 {% endfor %}
 

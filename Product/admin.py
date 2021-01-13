@@ -76,7 +76,7 @@ class CommentAdmin(admin.ModelAdmin):
     list_per_page = 10
 
 
-admin.site.register(Comment, CommentAdmin)
+# admin.site.register(Comment, CommentAdmin)
 
 
 class ColorAdmin(admin.ModelAdmin):

@@ -28,10 +28,10 @@ class OrderProductline(admin.TabularInline):
 
 class OrderAdmin(admin.ModelAdmin):
     list_display = ['first_name', 'last_name',
-                    'phone', 'total', 'status', 'transaction_id']
+                    'phone', 'total', 'status']
     list_filter = ['status']
     readonly_fields = ('user', 'first_name', 'last_name',
-                       'phone', 'address', 'city', 'country', 'total', 'ip', 'transaction_id', 'image_tag')
+                       'phone', 'address', 'city', 'country', 'total', 'ip', 'image_tag')
     can_delete = False
     inlines = [OrderProductline]
 
